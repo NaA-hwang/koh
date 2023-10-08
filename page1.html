@@ -17,12 +17,19 @@
     
         body {
             padding: 0;
+            margin: 0;
+            max-height: 100vh;
+            background-color: #000000;
+            display:flex;
+            align-content:center;
         }
     </style>
 </head>
 <body>
+    <div>
     <video id="mov" src="sources/comp01.mp4" autoplay="autoplay" loop controls muted="muted" playsinline>
     </video>
+    </div>
     <script>
         document.getElementById('mov').play();
     </script>

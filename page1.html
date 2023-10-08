@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mov01</title>
+    <style>
+        video {
+            width: 100%;
+            margin: 0;
+            object-fit: contain;
+        }
+    
+        div {
+            margin: 0;
+        }
+    
+        body {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <video id="mov" src="sources/Comp 1.mp4" autoplay="autoplay" loop controls muted="muted" playsinline>
+    </video>
+    <script>
+        document.getElementById('mov').play();
+    </script>
+</body>
+</html>

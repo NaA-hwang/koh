@@ -4,30 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mov01</title>
+    
+    <title>STIMULANTS HARPY</title>
+    <link rel="icon" type="image/x-icon" href="/sources/s-favi.ico">
     <style>
+        html {
+            height: -webkit-fill-available;
+        }
+    
+        body {
+            padding: 0;
+            margin: 0;
+            /* 브라우저 자체 기본 margin 없애기 */
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* '-webkit-fill-available'이 유효하지 않을 경우를 대비 */
+            height: -webkit-fill-available;
+        }
+    
         video {
-            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
             margin: 0;
             object-fit: contain;
         }
-
-        div {
-            margin: 0;
-        }
-
-        body {
-            padding: 0;
-        }
     </style>
-</head>
-
-<body>
-    <video id="mov" src="" autoplay="autoplay" loop controls muted="muted" playsinline>
-    </video>
-    <script>
-        document.getElementById('mov').play();
-    </script>
-</body>
-
-</html>
+    </head>
+    
+    <body class="container">
+        <div>
+            <video id="mov" src="sources/STIMULANTS HARPY.mp4" autoplay="autoplay" loop controls muted="muted" playsinline>
+            </video>
+        </div>
+        <script>
+            document.getElementById('mov').play();
+        </script>
+    </body>
+    
+    </html>
